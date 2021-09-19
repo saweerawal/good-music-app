@@ -39,9 +39,24 @@ export default function App() {
       <p>
         <small>Checkout my favorite songs. Select a genre to get started</small>
       </p>
-      <button onClick={() => setSongsType("Party")}>Party Songs</button>
-      <button onClick={() => setSongsType("Romantic")}>Romantic Songs</button>
-      <button onClick={() => setSongsType("Sad")}>Sad Songs</button>
+      <button
+        style={{ backgroundColor: "lightyellow", cursor: "pointer" }}
+        onClick={() => setSongsType("Party")}
+      >
+        Party Songs
+      </button>
+      <button
+        style={{ backgroundColor: "lightyellow", cursor: "pointer" }}
+        onClick={() => setSongsType("Romantic")}
+      >
+        Romantic Songs
+      </button>
+      <button
+        style={{ backgroundColor: "lightyellow", cursor: "pointer" }}
+        onClick={() => setSongsType("Sad")}
+      >
+        Sad Songs
+      </button>
       <hr></hr>
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0px" }}>
@@ -50,6 +65,7 @@ export default function App() {
               <li
                 key={song["song"]}
                 style={{
+                  backgroundColor: "white",
                   borderStyle: "solid",
                   borderRadius: "0.7rem",
                   margin: "0.5rem 0rem",
